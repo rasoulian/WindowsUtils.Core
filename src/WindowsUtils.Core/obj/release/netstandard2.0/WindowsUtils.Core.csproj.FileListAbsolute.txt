@@ -1,0 +1,9 @@
+C:\@rasoulian\dotnet\WindowsUtils.Core\src\bin\release\netstandard2.0\WindowsUtils.Core.deps.json
+C:\@rasoulian\dotnet\WindowsUtils.Core\src\bin\release\netstandard2.0\WindowsUtils.Core.dll
+C:\@rasoulian\dotnet\WindowsUtils.Core\src\bin\release\netstandard2.0\WindowsUtils.Core.pdb
+C:\@rasoulian\dotnet\WindowsUtils.Core\src\obj\release\netstandard2.0\WindowsUtils.Core.csprojAssemblyReference.cache
+C:\@rasoulian\dotnet\WindowsUtils.Core\src\obj\release\netstandard2.0\WindowsUtils.Core.csproj.CoreCompileInputs.cache
+C:\@rasoulian\dotnet\WindowsUtils.Core\src\obj\release\netstandard2.0\WindowsUtils.Core.AssemblyInfoInputs.cache
+C:\@rasoulian\dotnet\WindowsUtils.Core\src\obj\release\netstandard2.0\WindowsUtils.Core.AssemblyInfo.cs
+C:\@rasoulian\dotnet\WindowsUtils.Core\src\obj\release\netstandard2.0\WindowsUtils.Core.dll
+C:\@rasoulian\dotnet\WindowsUtils.Core\src\obj\release\netstandard2.0\WindowsUtils.Core.pdb
