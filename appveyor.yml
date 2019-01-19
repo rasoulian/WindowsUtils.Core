@@ -32,14 +32,12 @@ test_script:
 artifacts:
 - path: ./src/WindowsUtils.Core/bin/release/*.nupkg
   name: NuGet 
-deploy:
-- provider: GitHub
-  auth_token:
-    secure: IvSB6IfqnpNzloLvYJe2zEf/S9+3N7niFQoiQY2RyLeFhKAnbzfNJMFvZITkWDkn
-  api_key: 
-    secure: IvSB6IfqnpNzloLvYJe2zEf/S9+3N7niFQoiQY2RyLeFhKAnbzfNJMFvZITkWDkn
-  skip_symbols: true
 
+deploy:
+- provider: NuGet
+  api_key:
+    secure: sY6XD31OwuiRfReoU86FgHqk9VB218ncK79FyHLChge05nUdmlAscOIDJARy7r22
+  skip_symbols: true
 
 notifications:
 - provider: Email
