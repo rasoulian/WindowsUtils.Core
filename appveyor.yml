@@ -12,8 +12,11 @@ cache: C:\Users\appveyor\.dnx
 build_script:
 - cmd: >-
     cd ./src/
+    
     dotnet restore
+    
     dotnet pack -c release
+    
     cd ..
     
 artifacts:
