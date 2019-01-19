@@ -11,16 +11,26 @@ dotnet_csproj:
 cache: C:\Users\appveyor\.dnx
 build_script:
 - cmd: >-
-    cd ./src/
+    cd ./src/WindowsUtils.Core
     
     dotnet restore
     
     dotnet pack -c release
     
     cd ..
-    
+
+test_script:
+- cmd: >-
+    cd ./src/WindowsUtils.Core.Tests
+
+    dotnet restore
+
+    dotnet test
+
+    cd ../..
+
 artifacts:
-- path: ./src/bin/release/*.nupkg
+- path: ./src/WindowsUtils.Core/bin/release/*.nupkg
   name: NuGet 
 deploy:
 - provider: GitHub
