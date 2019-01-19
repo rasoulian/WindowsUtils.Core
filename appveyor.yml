@@ -1,0 +1,40 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
+cache: C:\Users\appveyor\.dnx
+build_script:
+- cmd: >-
+    cd ./src/
+    
+    dotnet restore
+    
+    dotnet pack -c release
+    
+    cd ..
+    
+artifacts:
+- path: ./src/bin/release/*.nupkg
+  name: NuGet 
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: IvSB6IfqnpNzloLvYJe2zEf/S9+3N7niFQoiQY2RyLeFhKAnbzfNJMFvZITkWDkn
+  api_key: 
+    secure: IvSB6IfqnpNzloLvYJe2zEf/S9+3N7niFQoiQY2RyLeFhKAnbzfNJMFvZITkWDkn
+  skip_symbols: true
+
+
+notifications:
+- provider: Email
+  to:
+  - arasoulian@gmail.com
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: true 
