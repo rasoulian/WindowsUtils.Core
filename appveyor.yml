@@ -17,7 +17,7 @@ build_script:
     cd ..
     
 artifacts:
-- path: ./src/WindowsUtils.Core/bin/release/*.nupkg
+- path: ./src/bin/release/*.nupkg
   name: NuGet 
 deploy:
 - provider: GitHub
