@@ -17,7 +17,7 @@ build_script:
     
     dotnet pack -c release
     
-    cd ..
+    cd ../..
 
 test_script:
 - cmd: >-
